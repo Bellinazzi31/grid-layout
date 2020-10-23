@@ -7,7 +7,7 @@
    /* grid-template-columns: 25% 25% 25% 25%; */
    /* grid-template-columns: 300px 3fr 1fr; */
    /* grid-template-columns: minmax(300px, 600px)3fr 1fr; */
-    grid-template-columns: 150px 1fr 150px;
+    grid-template-columns: 900px 1fr 350px;
     grid-template-rows: 100px 1fr 50px;
     grid-gap: 1rem;
     grid-template-areas: 
@@ -15,9 +15,8 @@
     'lsidebar content rsidebar'
     'footer footer footer';
     min-height: 100vh;
-    /*justify-items: center;
-    align-items: center;*/
-    place-items: center;
+  
+  
 }
 .grid-wrapper > div {
     background-color: gray;
@@ -25,17 +24,18 @@
 }
 .one {
     grid-area: header;
-   
+    
     
 
 }
 .two {
     grid-area: lsidebar;
+    justify-self: stretch;
+    
 }
 .three {
     grid-area: content;
-    justify-self: start;
-    align-self: stretch;
+   
 
 }
 .four {
@@ -44,8 +44,8 @@
 .five {
     grid-area: footer;
 }
-/* .one,
+/* s.one,
 .five {
     grid-column: 1/4;
     
-} */
+} 
